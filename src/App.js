@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+// Component Tree structure
+// **** Major - Minor ****
+// Navigator - Navbar, UserControls
+// UserControls - CartButton, ProfileButton
+// Main - ItemImages, ItemInfo
+// ItemImages - FeaturedImage, CarouselImages
+// 
 
-function App() {
+import React from "react"
+import Navigator from "./components/Navigator"
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Navigator />
+    </>
+  )
 }
 
-export default App;
+export default App
