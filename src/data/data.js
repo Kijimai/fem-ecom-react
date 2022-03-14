@@ -8,6 +8,7 @@ import img3desktop from "../images/image-product-3.jpg"
 import img4desktop from "../images/image-product-4.jpg"
 const thumbnailImgs = [img1thumb, img2thumb, img3thumb, img4thumb]
 const desktopImgs = [img1desktop, img2desktop, img3desktop, img4desktop]
+
 export const navLinks = [
   {
     nav_id: 1,
@@ -43,7 +44,9 @@ export const productList = [
     product_description:
       "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.",
     price: 250,
+    cartImage: img1thumb,
     thumbnailImgs: thumbnailImgs,
     desktopImgs: desktopImgs,
+    amount: 1,
   },
 ]
