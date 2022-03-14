@@ -13,11 +13,14 @@ const Navbar = () => {
         <button className="navbar__button" onClick={handleNavBtn}>
           <img src={isNavOpen ? iconOpen : iconClose} alt="navigation button" />
         </button>
-        <ul className={`navLinks ${isNavOpen && "active"}`}>
+
+        <ul className={`navbar__links ${isNavOpen && "active"}`}>
           {navLinks.map((item) => {
             return (
               <li key={item.nav_id}>
-                <a href={item.navUrl}>{item.navLink}</a>
+                <a className="navbar__link" href={item.navUrl}>
+                  {item.navLink}
+                </a>
               </li>
             )
           })}

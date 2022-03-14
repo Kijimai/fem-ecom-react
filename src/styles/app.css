@@ -1,5 +1,7 @@
 :root {
   --default-font-size: 1.6rem;
+  --color-white: 0 0% 100%;
+  --color-black: 0 0% 0%;
 }
 
 html {
@@ -26,11 +28,22 @@ body {
   padding: 0 2rem;
   transition: all 0.25s ease;
 }
+
 .navbar {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
+}
+.navbar__links {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  position: fixed;
+  background-color: hsl(var(--color-white));
+}
+.navbar__link {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=app.css.map */
